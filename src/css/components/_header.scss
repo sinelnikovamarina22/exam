@@ -1,0 +1,57 @@
+.header {
+  background-image: url(../images/header.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 260px;
+
+  &__title{
+      @include text($H750,400);
+      font-family: $secondary-font;
+      text-transform: uppercase;
+      letter-spacing: 11px;
+      margin-bottom: 10px;
+  }
+  &__text{
+    @include text($H400);
+    font-family: $secondary-font;
+    margin-bottom: 50px;
+    letter-spacing: 7px;
+  }
+  &__form{
+    height: 65px;
+    width: 650px;
+    background-color: $white;
+    margin-bottom:120px ;
+
+}
+&__input{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    height: 100%;
+    width: 522px;
+    padding-left: 120px;
+    padding-right: 120px;
+    border-radius:0;
+    @include text($H10, $grey);
+    font-family: $secondary-font;
+    
+}
+&__button{
+  border: none;
+  outline: none;
+  background-color: $blue;
+  text-transform: uppercase;
+  @include text($H10, 400, $white);
+  padding: 19px 15px 23px 26px;
+ 
+}
+
+
+}

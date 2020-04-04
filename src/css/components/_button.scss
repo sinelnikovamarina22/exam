@@ -1,0 +1,13 @@
+.button {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  background-color: $blue;
+  @include text($H100, 400, $light);
+  text-transform: uppercase;
+  width: fit-content;
+  @include flex(flex-start, center);
+  &--about {
+    padding: 20px 38px;
+  }
+}

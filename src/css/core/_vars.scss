@@ -1,0 +1,32 @@
+// Colors
+$white: #FFFFFF;
+$light: #FEFEFE;
+$grey-light: #E8E8E8;
+$grey: #CCCCCC;
+$dark: #333333;
+$darker: #232323;
+$blue: #5474FD;
+
+// Fonts
+$base-font: 'Aleo', serif;
+$secondary-font: 'Josefin Sans', sans-serif;
+
+@function calcRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+  }
+  
+  $logo-fs: calcRem(50px);
+  
+  $H900: calcRem(90px);
+  $H800: calcRem(70px);
+  $H750: calcRem(48px);
+  $H700: calcRem(40px);
+  $H600: calcRem(36px);
+  $H500: calcRem(24px);
+  $H400: calcRem(22px);
+  $H300: calcRem(20px);
+  $H200: calcRem(17px);
+  $H100: calcRem(16px);
+  $H50: calcRem(15px);
+  $H10: calcRem(14px);

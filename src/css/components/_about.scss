@@ -1,0 +1,49 @@
+.section-about {
+  background-image: url(../images/section-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  @include flex(center, stretch, column);
+
+  &__container {
+    @include flex(flex-start, stretch, row);
+  }
+  &__content-side {
+    width: 50%;
+    @include flex(flex-start, stretch, column);
+    padding-top: 205px;
+  }
+  &__container-pictures {
+    @include flex(flex-start, stretch, column);
+    width: 50%;
+    padding-top: 120px;
+  }
+  &__picture-side:not(:last-child) {
+    padding-left: 67px;
+  }
+  &__picture-side:last-child {
+    padding-left: 190px;
+  }
+
+  &__title {
+    @include text($H600, 400, $light);
+    font-family: $secondary-font;
+    margin-bottom: 60px;
+  }
+  &__text {
+    @include text($H100, 400, $light);
+    font-family: $secondary-font;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    
+      margin-bottom: 27px;
+    
+    &:last-child {
+      margin-bottom: 60px;
+    }
+  }
+  &__button{
+      margin-bottom: 130px;
+  }
+}
