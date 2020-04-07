@@ -8,13 +8,21 @@ body {
   font-family: $base-font;
 }
 
-.container {
-  max-width: 1110px;
-  margin: 0 auto;
-}
+
 ul {
   list-style: none;
 }
 a {
   text-decoration: none;
+}
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  @media screen and (min-width: $screen-desktop-large) {
+    padding-left: 0;
+    padding-right: 0;
+    
+  }
 }

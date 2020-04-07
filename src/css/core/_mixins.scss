@@ -38,3 +38,8 @@
   align-items: $align-items;
   flex-wrap: $wrap;
 }
+@mixin media($screen: $screen-desktop) {
+  @media screen and (min-width: $screen) {
+    @content;
+  }
+}

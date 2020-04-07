@@ -1,7 +1,7 @@
 .scroll {
-  margin-bottom: 280px;
   display: block;
     @include flex(center, center, column);
+  
 
   &__text {
     @include text($H10, 400, $light);
